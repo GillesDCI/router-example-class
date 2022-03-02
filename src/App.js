@@ -2,8 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 //deconstructing functionality from the react-router-dom.
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
+//importing boostrap
 import 'bootstrap/dist/css/bootstrap.min.css';
+//importing the pages
 import Homepage from './routes/Homepage/Homepage';
 import Aboutpage from './routes/Aboutpage/Aboutpage';
 import NavigationBar from './components/navigation/NavigationBar/NavigationBar';
@@ -15,7 +16,8 @@ function App() {
      <>
       <BrowserRouter>
         <NavigationBar />
-         <Routes>
+         <Routes> {/* Our routes go inside here */}
+            {/* the path of our route and the element that corresponds with it */}
            <Route path="/" element={<Homepage />} />
            <Route path="/about" element={<Aboutpage />} />
            <Route path="/list" element={<Listpage />} />

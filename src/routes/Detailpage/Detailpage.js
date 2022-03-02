@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 //function component
 export default function Detailpage(){
     //returns the following elements
+    //extract id from the useParams hook here: 
     let { id } = useParams();
 
     return (
